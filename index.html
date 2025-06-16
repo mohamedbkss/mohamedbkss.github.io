@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MohaTech | Servicio Técnico Profesional</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Roboto', sans-serif;
+      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+      color: #fff;
+    }
+
+    header {
+      background: #000000cc;
+      padding: 20px;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 999;
+    }
+
+    header h1 {
+      font-size: 2.5em;
+      color: #00bcd4;
+    }
+
+    nav {
+      margin-top: 10px;
+    }
+
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #ffffffcc;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #00e5ff;
+    }
+
+    section {
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .hero {
+      text-align: center;
+      padding-top: 80px;
+      animation: fadeIn 1.5s ease;
+    }
+
+    .hero h2 {
+      font-size: 2.5em;
+      margin-bottom: 20px;
+      color: #00e5ff;
+    }
+
+    .hero p {
+      font-size: 1.2em;
+      color: #ccc;
+    }
+
+    .services table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+      background-color: #ffffff11;
+      border-radius: 10px;
+      overflow: hidden;
+    }
+
+    .services th, .services td {
+      padding: 15px;
+      text-align: left;
+    }
+
+    .services th {
+      background-color: #00bcd4;
+      color: #000;
+    }
+
+    .services tr:nth-child(even) {
+      background-color: #ffffff08;
+    }
+
+    .testimonial {
+      background-color: #ffffff11;
+      padding: 20px;
+      margin-top: 30px;
+      border-left: 4px solid #00e5ff;
+      border-radius: 10px;
+    }
+
+    footer {
+      background-color: #000000cc;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9em;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>MohaTech</h1>
+    <nav>
+      <a href="#sobre">Sobre mí</a>
+      <a href="#servicios">Servicios</a>
+      <a href="#opiniones">Opiniones</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>¿Tu portátil o torre va lento?</h2>
+    <p>En <strong>MohaTech</strong> lo dejamos como nuevo. Profesionalismo, honestidad y precios reales.</p>
+  </section>
+
+  <section id="sobre">
+    <h2>Sobre mí</h2>
+    <p>Me dedico al soporte técnico de equipos informáticos. He ayudado a muchas personas con sus portátiles y torres, ofreciendo soluciones reales, honestas y accesibles. Me cansé de que se aprovecharan de mí, por eso ahora doy el valor justo a mi tiempo y trabajo.</p>
+  </section>
+
+  <section id="servicios" class="services">
+    <h2>Servicios y Precios</h2>
+    <table>
+      <tr><th>Servicio</th><th>Precio</th></tr>
+      <tr><td>💽 Eliminación de virus</td><td>25 €</td></tr>
+      <tr><td>💿 Cambio de sistema operativo</td><td>40 €</td></tr>
+      <tr><td>🌀 Instalación de Dual Boot (Windows + Linux)</td><td>60 €</td></tr>
+      <tr><td>⚙️ Optimización de rendimiento</td><td>30 €</td></tr>
+      <tr><td>🔍 Instalación de drivers y actualizaciones</td><td>25 €</td></tr>
+      <tr><td>📱 Instalación de Play Store en Windows</td><td>20 €</td></tr>
+      <tr><td>🌐 Instalación de Google Chrome</td><td>10 €</td></tr>
+    </table>
+  </section>
+
+  <section id="opiniones">
+    <h2>Opiniones de clientes</h2>
+    <div class="testimonial">
+      "Mi portátil iba como una tortuga, ahora vuela. ¡Gracias MohaTech!"
+    </div>
+    <div class="testimonial">
+      "Fácil, rápido y seguro. Nunca había tenido un técnico tan dedicado."
+    </div>
+  </section>
+
+  <section id="contacto">
+    <h2>Contacto</h2>
+    <p>Puedes contactarme directamente por WhatsApp o dejar tu mensaje aquí:</p>
+    <form>
+      <input type="text" placeholder="Tu nombre" required style="padding: 10px; width: 100%; margin-bottom: 10px;" />
+      <input type="email" placeholder="Tu correo" required style="padding: 10px; width: 100%; margin-bottom: 10px;" />
+      <textarea placeholder="Tu mensaje" required style="padding: 10px; width: 100%; height: 100px;"></textarea>
+      <button type="submit" style="padding: 10px 20px; margin-top: 10px; background-color: #00e5ff; color: #000; font-weight: bold; border: none; cursor: pointer;">Enviar</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 MohaTech. Todos los derechos reservados.</p>
+  </footer>
+</body>
+</html>
