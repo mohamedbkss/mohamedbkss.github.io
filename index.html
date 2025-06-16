@@ -163,13 +163,13 @@
 
   <section id="contacto">
     <h2>Contacto</h2>
-    <p>Puedes contactarme directamente mensaje aquí:</p>
+    <p>Puedes contactarme directamente por mensaje aquí:</p>
 <form id="my-form" action="https://formspree.io/f/mwpbbyja" method="POST">
-  <label>Email:</label>
+  <label>Tu email:</label>
   <input type="email" name="email" />
-  <label>Message:</label>
+  <label>Tu mensaje:</label>
   <input type="text" name="message" />
-  <button id="my-form-button">Submit</button>
+  <button id="my-form-button">Enviar</button>
   <p id="my-form-status"></p>
 </form>
 
@@ -189,19 +189,19 @@
       }
     }).then(response => {
       if (response.ok) {
-        status.innerHTML = "Thanks for your submission!";
+        status.innerHTML = "¡Gracias por contactar con nosotros!";
         form.reset()
       } else {
         response.json().then(data => {
           if (Object.hasOwn(data, 'errors')) {
             status.innerHTML = data["errors"].map(error => error["message"]).join(", ")
           } else {
-            status.innerHTML = "Oops! There was a problem submitting your form"
+            status.innerHTML = "¡Uuy! Hubo un problema con tu mensaje"
           }
         })
       }
     }).catch(error => {
-      status.innerHTML = "Oops! There was a problem submitting your form"
+      status.innerHTML = "¡Uuy! Hubo un problema con tu mensaje"
     });
   }
   form.addEventListener("submit", handleSubmit)
